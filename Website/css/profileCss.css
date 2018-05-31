@@ -1,0 +1,96 @@
+.side-nav
+{
+  top: 65px;
+  width: 250px;
+}
+.img-with-text {
+    text-align: justify;
+    width: [width of img];
+}
+
+.img-with-text img {
+    display: block;
+    margin: 0 auto;
+}
+   #services {
+      position:absolute;
+      top: 200px;
+      width: 100%;
+      color: white;
+      font-weight: lighter;
+      font-size: 105;
+   }
+
+   #tagline {
+     top: 200px;
+     width: 100%;
+     color: grey;
+     font-weight: lighter;
+     font-style: italic;
+     font-size: 30;
+   }
+
+
+
+   body {
+     display: flex;
+     min-height: 100vh;
+     flex-direction: column;
+   }
+
+   main {
+     flex: 1 0 auto;
+   }
+
+   .parallax
+   {
+       margin: auto;
+     height: 100%;
+      width: 100%;
+      top: 0;
+   }
+
+
+   .port
+   {
+      text-align:center;
+     align-items: center;
+     position:relative;
+      bottom:150px;
+   }
+
+   h2
+   {
+     font-weight: lighter;
+   }
+
+   .trans
+   {
+    align-items: center;
+    position:relative;
+   }
+
+   .para
+   {
+     font-size: 25;
+     font-weight: lighter;
+   }
+
+   .card {
+        width:300px;
+     }
+
+   .input-field input[type=date]:focus + label,
+   .input-field input[type=text]:focus + label,
+   .input-field input[type=email]:focus + label,
+   .input-field input[type=password]:focus + label {
+     color: #e91e63;
+   }
+
+   .input-field input[type=date]:focus,
+   .input-field input[type=text]:focus,
+   .input-field input[type=email]:focus,
+   .input-field input[type=password]:focus {
+     border-bottom: 2px solid #e91e63;
+     box-shadow: none;
+   }
