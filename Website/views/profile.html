@@ -1,19 +1,13 @@
-<html>
+<?php
+  include "../includes/header.html";
+?>
 
-<head>
-  <title>Travel4Life About</title>
-  <script language="JavaScript" type="text/javascript" src="jquery.js"></script>
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
-  <link rel="stylesheet" href="css/profileCss.css">
-</head>
-
-<body>
+<body id="profile">
 
 <div class="navbar-fixed">
   <nav class='col s12 waves-effect indigo'>
     <div class="nav-wrapper">
-      <img id="logo" style="width: 64px;" src="assets/logo.png" />
+      <img id="logo" class="logo-size" src="../assets/img/logo.png" />
       <a href="#!" class="brand-logo">Travel4Life</a>
       <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons" >menu</i></a>
       <ul class="right hide-on-med-and-down">
@@ -60,7 +54,7 @@
   <div id="slide-out" class="side-nav fixed">
     <br>
     <div class="img-with-text">
-      <img style="width: 200px;" src="assets/dp.jpg" />
+      <img style="" class="profile-picture-size" src="../assets/img/dp.jpg" />
       <ul>
         <li><a href="#!">0 Connections</a></li>
         <li><a href="#!">0 Reward points</a></li>
@@ -77,12 +71,6 @@
 
   </main>
 
-
-
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
-  <script type="text/javascript" src="js/profile.js"></script>
-</body>
-
-</html>
+<?php
+    include "../includes/footer.html";
+?>

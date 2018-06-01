@@ -1,25 +1,24 @@
-<html>
+<?php
+  include "../includes/header.html";
+?>
 
-<head>
-  <title>Travel4Life SignUp</title>
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
-  <link rel="stylesheet" href="css/loginCss.css">
-</head>
+<body background="../assets/img/bg.jpg" >
 
-<body background="assets/bg.jpg" >
+<?php
+  include "../includes/navbar.html";
+?>
 
   <div class="section"></div>
   <main>
     <center>
-      <img id="logo" style="width: 70px;" src="assets/logo.png" />
+      <img id="logo" class="logo-size" src="../assets/img/logo.png" />
       <div class="section"></div>
 
       <h5 class="indigo-text">Please enter valid username and password</h5>
       <div class="section"></div>
 
       <div class="container">
-        <div class="z-depth-1 grey lighten-4 row" style="display: inline-block; padding: 32px 48px 0px 48px; border: 1px solid #EEE;">
+        <div class="z-depth-1 grey lighten-4 row form-field">
 
           <form class="col s12" method="post">
             <div class='row'>
@@ -78,11 +77,7 @@
     <div class="section"></div>
     <div class="section"></div>
   </main>
-
-  <script type="text/javascript" src="js/loginJs.js"></script>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
-</body>
-
-</html>
+  
+<?php
+    include "../includes/footer.html";
+?>

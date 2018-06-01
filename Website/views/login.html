@@ -1,36 +1,12 @@
-<html>
+<?php
+  include "../includes/header.html";
+?>
 
-<head>
-  <title>Travel4Life Login</title>
-  <script language="JavaScript" type="text/javascript" src="jquery.js"></script>
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
-  <link rel="stylesheet" href="css/loginCss.css">
-</head>
+<body background="../assets/img/bg.jpg" id="login">
 
-<body background="assets/bg.jpg">
-
-  <nav class='col s12 waves-effect indigo'>
-    <div class="nav-wrapper">
-      <img id="logo" style="width: 64px;" src="assets/logo.png" />
-      <a href="#!" class="brand-logo">Travel4Life</a>
-      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons" >menu</i></a>
-      <ul class="right hide-on-med-and-down">
-        <li><a id="srv" href="services.html">Services</a></li>
-        <li><a href="#!">iOS</a></li>
-        <li><a href="#!">Android</a></li>
-        <li><a href="about.html">About</a></li>
-        <li class="active"><a href="login.html"><i class="material-icons">person_pin</i></a></li>
-      </ul>
-      <ul class="side-nav" id="mobile-demo">
-        <li><a id="srv" href="services.html">Services</a></li>
-        <li><a href="#!">iOS</a></li>
-        <li><a href="#!">Android</a></li>
-        <li><a href="about.html">About</a></li>
-        <li class="active"><a href="login.html"><i class="material-icons">person_pin</i></a></li>
-      </ul>
-    </div>
-  </nav>
+<?php
+  include "../includes/navbar.html";
+?>
 
   <div class="section"></div>
   <main>
@@ -41,7 +17,7 @@
       <div class="section"></div>
 
       <div class="container">
-        <div class="z-depth-1 grey lighten-4 row" style="display: inline-block; padding: 32px 48px 0px 48px; border: 1px solid #EEE;">
+        <div class="z-depth-1 grey lighten-4 row form-field">
 
           <form class="col s12" method="post">
             <div class='row'>
@@ -83,10 +59,6 @@
     <div class="section"></div>
   </main>
 
-  <script type="text/javascript" src="js/loginJs.js"></script>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
-</body>
-
-</html>
+<?php
+    include "../includes/footer.html";
+?>

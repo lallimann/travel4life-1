@@ -1,43 +1,18 @@
-<html>
-
-<head>
-  <title>Travel4Life About</title>
-  <script language="JavaScript" type="text/javascript" src="jquery.js"></script>
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
-  <link rel="stylesheet" href="css/services.css">
-</head>
+<?php
+  include "../includes/header.html";
+?>
 
 <body>
-<div class="navbar-fixed">
-  <nav class='col s12 waves-effect indigo'>
-    <div class="nav-wrapper">
-      <img id="logo" style="width: 64px;" src="assets/logo.png" />
-      <a href="#!" class="brand-logo">Travel4Life</a>
-      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons" >menu</i></a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="services.html">Services</a></li>
-        <li><a href="#!">iOS</a></li>
-        <li><a href="#!">Android</a></li>
-        <li class="active"><a href="about.html">About</a></li>
-        <li><a href="login.html"><i class="material-icons">person_pin</i></a></li>
-      </ul>
-      <ul class="side-nav" id="mobile-demo">
-        <li><a href="services.html">Services</a></li>
-        <li><a href="#!">iOS</a></li>
-        <li><a href="#!">Android</a></li>
-        <li class="active"><a href="about.html">About</a></li>
-        <li><a href="login.html"><i class="material-icons">person_pin</i></a></li>
-      </ul>
-    </div>
-  </nav>
-  <div>
+  
+<?php
+  include "../includes/navbar.html";
+?>
 
 
   <main>
 
     <div class="parallax-container">
-        <img class="parallax" src="assets/about.jpg"/>
+        <img class="parallax" src="../assets/img/about.jpg"/>
         <center id="services">About Us</center>
     </div>
 
@@ -69,12 +44,6 @@
 
   </main>
 
-
-
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
-  <script type="text/javascript" src="js/servicesJs.js"></script>
-</body>
-
-</html>
+<?php
+    include "../includes/footer.html";
+?>
