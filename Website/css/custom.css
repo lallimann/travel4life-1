@@ -43,7 +43,7 @@ main {
  width: 100%;
  color: white;
  font-weight: lighter;
- font-size: 105;
+ font-size: 105px;
 }
 
 #tagline {
@@ -52,7 +52,7 @@ main {
   color: grey;
   font-weight: lighter;
   font-style: italic;
-  font-size: 30;
+  font-size: 30px;
 }
 
 .parallax {
@@ -81,7 +81,7 @@ h2 {
 
 .para
 {
-  font-size: 25;
+  font-size: 25px;
   font-weight: lighter;
 }
 
@@ -90,9 +90,9 @@ h2 {
 }
 
 .services-div {
-  width:300px !important; 
-  left:20px !important; 
-  display: inline-block !important; 
+  width:300px !important;
+  left:20px !important;
+  display: inline-block !important;
   margin-right: 20px !important;
 }
 
@@ -109,8 +109,8 @@ h2 {
 }
 
 .form-field {
-  display: inline-block; 
-  padding: 32px 48px 0px 48px; 
+  display: inline-block;
+  padding: 32px 48px 0px 48px;
   border: 1px solid #EEE;
 }
 
