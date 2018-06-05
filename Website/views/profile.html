@@ -55,11 +55,13 @@
   <div id="slide-out" class="side-nav fixed">
     <br>
     <div class="img-with-text">
-      <img style="" class="profile-picture-size" src="../assets/img/dp.jpg" />
+
       <ul>
+        <li><input type='file' onchange="readURL(this);" accept="image/*"/><img id="dp" style="" class="profile-picture-size" src="../assets/img/dp.jpg" /></li>
+        <li id="nameSide"></li>
         <li><a href="#!">0 Connections</a></li>
         <li><a href="#!">0 Reward points</a></li>
-        <li><a href="login.html">Logout</a></li>
+        <li><a id="logout">Logout</a></li>
       </ul>
     </div>
 
