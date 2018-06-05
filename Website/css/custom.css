@@ -88,7 +88,10 @@ h2 {
 .card {
   width:300px;
 }
-
+.card-image
+{
+  width: 700px;
+}
 .services-div {
   width:300px !important;
   left:20px !important;
@@ -106,6 +109,10 @@ h2 {
 
 .logo-size {
   width: 64px;
+}
+
+.myFeedsImg{
+  width: 500px;
 }
 
 .form-field {

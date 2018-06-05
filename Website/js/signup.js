@@ -26,10 +26,14 @@ function saveUser()
               var userRoot = root.child("Users");
               var basicRoot = userRoot.child("basics");
             //  userRoot.child(uid).set(data);
-              basicRoot.child(uid).set(data);
-
+              basicRoot.child(uid).set(data).then(function(ref) {//use 'child' and 'set' combination to save data in your own generated key
               alert(uid+" id Signup successful");
               window.open("../views/login.html", "_self");
+            }, function(error) {
+                console.log(error);
+            });
+
+
             } else {
               // No user is signed in.
             }
