@@ -22,6 +22,38 @@ $(document).ready(function(){
           document.getElementById("nameSide").innerHTML = userDataJSON.name ;
 
         });
+
+        var ids = [];
+        var postsRoot = userRoot.child("posts");
+        postsRoot.on('value', snap =>{
+          for(uid in snap.val())
+          {
+            ids.push(uid);
+          }
+          var i = 0;
+          for(id in ids)
+          {
+            var idRoot = postsRoot.child(ids[i]);
+            idRoot.on('value', snap =>{
+              for(imgID in snap.val())
+              {
+                var imageRoot = idRoot.child(imgID);
+                imageRoot.on('value', snap =>{
+                  var userDataJSON = snap.val();
+                  if(userDataJSON.postPic != null)
+                  {
+                    var DOM_img = document.createElement("img");
+                    DOM_img.src = userDataJSON.postPic;
+                    DOM_img.width = "700";
+                    document.getElementById("allFeedsList").appendChild(DOM_img);
+                  }
+                });
+              }
+            });
+            i++;
+          }
+        });
+
       }
     } else {
       // No user is signed in.

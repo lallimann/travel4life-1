@@ -22,17 +22,15 @@ $(document).ready(function(){
 
         });
 
-        var node = document.createElement("LI");
+      //  var node = document.createElement("LI");
         var postsRoot = userRoot.child("posts");
         var uidRoot = postsRoot.child(uid);
-        var everyRoot = uidRoot.child("everyone");
 
-        everyRoot.on('value', snap =>{
+        uidRoot.on('value', snap =>{
           var userDataJSON = snap.val();
-
           for(imgID in userDataJSON)
           {
-            var imageRoot = everyRoot.child(imgID);
+            var imageRoot = uidRoot.child(imgID);
 
             imageRoot.on('value', snap =>{
               var userDataJSON = snap.val();
@@ -144,9 +142,8 @@ function feed(input) {
                       var userRoot = root.child("Users");
                       var postsRoot = userRoot.child("posts");
                       var uidRoot = postsRoot.child(uid);
-                      var everyRoot = uidRoot.child("everyone");
                     //  userRoot.child(uid).set(data);
-                      everyRoot.child(uid+Date.now()).update(data);
+                      uidRoot.child(uid+Date.now()).update(data);
                       location.reload();
                     }
                   });
