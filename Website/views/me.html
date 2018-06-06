@@ -24,7 +24,7 @@
             </div>
            </div>
           </li>
-        <li class=""><a href="#!">Home</a></li>
+        <li class=""><a href="profile.html">Home</a></li>
         <li><a href="#!">My Rewards</a></li>
         <li><a href="#!">Travel4life Ranking</a></li>
         <li><a href="me.html"><i class="material-icons">account_circle</i></a></li>
@@ -69,9 +69,13 @@
   </div>
 
   <main>
-    <div class="container">
-      <center><h3>posts will go here</h3></center>
-    </div>
+    <center><div class="container" id="myFeeds" align="center">
+      <center><h6>Upload pics to share</h6><input type='file' onchange="feed(this);" accept="image/*"/></center>
+
+      <ul id="myFeedsList">
+      </ul>
+
+    </div></center>
 
   </main>
 

@@ -2,7 +2,6 @@
 
 <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
 <script>
-  
 // Initialize Firebase
 var config = {
   apiKey: "AIzaSyAK2oiHBT56tRJZIYTi01wN5wLnu95PTqE",
@@ -12,14 +11,11 @@ var config = {
   storageBucket: "gs://travel4life-35fbb.appspot.com",
   messagingSenderId: "223962841012"
 };
-
 firebase.initializeApp(config);
-
 </script>
   <script type="text/javascript" src="../js/jquery.js"></script>
-  <script type="text/javascript" src="../css/materialize/js/materialize.js"></script>
+  <script type="text/javascript" src="../css/materialize/js/materialize.min.js"></script>
   <script type="text/javascript" src="../js/services.js"></script>
-  <script type="text/javascript" src="../js/main.js"></script>
   <script type="text/javascript" src="../js/login.js"></script>
   <script type="text/javascript" src="../js/profile.js"></script>
   <script type="text/javascript" src="../js/signup.js"></script>
