@@ -8,6 +8,8 @@ main {
   flex: 1 0 auto;
 }
 
+
+
 .input-field input[type=date]:focus + label,
 .input-field input[type=text]:focus + label,
 .input-field input[type=email]:focus + label,
@@ -37,6 +39,10 @@ main {
   margin: 0 auto;
 }
 
+#rewardsH {
+  font-weight: lighter;
+}
+
 #services {
  position:absolute;
  top: 200px;
@@ -53,6 +59,11 @@ main {
   font-weight: lighter;
   font-style: italic;
   font-size: 30px;
+}
+
+#medalImg
+{
+  width: 400px;
 }
 
 .parallax {

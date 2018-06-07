@@ -19,6 +19,10 @@ $(document).ready(function(){
             $('#dp')
                 .attr('src', userDataJSON.profilePic);
           }
+          if(userDataJSON.rewardP != null)
+          {
+            $('#points').text(userDataJSON.rewardP + " Reward points");
+          }
           document.getElementById("nameSide").innerHTML = userDataJSON.name ;
 
         });

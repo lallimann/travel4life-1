@@ -18,6 +18,10 @@ $(document).ready(function(){
             $('#dp')
                 .attr('src', userDataJSON.profilePic);
           }
+          if(userDataJSON.rewardP != null)
+          {
+            $('#points').text(userDataJSON.rewardP + " Reward points");
+          }
           document.getElementById("nameSide").innerHTML = userDataJSON.name ;
 
         });
@@ -128,6 +132,8 @@ function feed(input) {
                   }, function() {
                     // Handle successful uploads on complete
                     // For instance, get the download URL: https://firebasestorage.googleapis.com/...
+
+
                     uploadTask.snapshot.ref.getDownloadURL().then(function(downloadURL) {
                       firebase.auth().onAuthStateChanged(function(user) {
                         if (user) {
@@ -144,6 +150,24 @@ function feed(input) {
                       var uidRoot = postsRoot.child(uid);
                     //  userRoot.child(uid).set(data);
                       uidRoot.child(uid+Date.now()).update(data);
+
+                      //get reward points
+                      var basicRoot = userRoot.child("basics").child(uid);
+                      var points = 1;
+                      basicRoot.on('value', snap =>{
+                        var userDataJSON = snap.val();
+                        if(userDataJSON.rewardP != null)
+                        {
+                          points = userDataJSON.rewardP + 1;
+                        }
+                        else {
+                          points = 1;
+                        }
+                      });
+                      var data2 = {
+                        rewardP: points
+                      }
+                      basicRoot.update(data2);
                       location.reload();
                     }
                   });
@@ -151,8 +175,9 @@ function feed(input) {
                   });
 
                 };
-
                 reader.readAsDataURL(input.files[0]);
+
+
             }
 }
 
