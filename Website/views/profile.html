@@ -4,7 +4,6 @@
 ?>
 
 <body id="profile">
-
 <div class="navbar-fixed">
   <nav class='col s12 waves-effect indigo'>
     <div class="nav-wrapper">
@@ -25,11 +24,10 @@
            </div>
           </li> -->
         <li class=""><a href="profile.html">Feeds</a></li>
-        <li><a href="#!">My Coupons</a></li>
+        <li><a href="shop.html">Shop</a></li>
         <li><a href="flight.html"><i class="material-icons">flight_takeoff</i></a></li>
         <li><a href="rewards.html"><i class="material-icons">stars</i></a></li>
         <li><a href="me.html"><i class="material-icons">account_circle</i></a></li>
-        <li><a href="#!"><i class="material-icons">settings</i></a></li>
       </ul>
 
       <ul class="side-nav" id="mobile-demo">
@@ -46,11 +44,10 @@
          </div>
         </li> -->
         <li class=""><a href="profile.html">Feeds</a></li>
-        <li><a href="#!">My Coupons</a></li>
+        <li><a href="shop.html">Shop</a></li>
         <li><a href="flight.html"><i class="material-icons">flight_takeoff</i></a></li>
         <li><a href="rewards.html"><i class="material-icons">stars</i></a></li>
         <li><a href="me.html"><i class="material-icons">account_circle</i></a></li>
-        <li><a href="#!"><i class="material-icons">settings</i></a></li>
       </ul>
     </div>
   </nav>
@@ -64,6 +61,7 @@
         <li><input type='file' onchange="readURL(this);" accept="image/*"/><img id="dp" style="" class="profile-picture-size" src="../assets/img/dp.jpg" /></li>
         <li id="nameSide"></li>
         <li><a id="points" href="#!">0 Reward points</a></li>
+        <li><a id="changeP">Change Password</a></li>
         <li><a id="logout">Logout</a></li>
       </ul>
     </div>
@@ -72,7 +70,8 @@
 
   <main>
     <center><div class="container">
-      <center><h6>Pics shared by all users</h6></center>
+      <div style="position:absolute; top:10; right:0;" id="ytWidget"></div><script src="https://translate.yandex.net/website-widget/v1/widget.js?widgetId=ytWidget&pageLang=en&widgetTheme=light&autoMode=true" type="text/javascript"></script>
+      <center><h6>Pictures shared by all users</h6></center>
       <ul id="allFeedsList">
       </ul>
     </div></center>

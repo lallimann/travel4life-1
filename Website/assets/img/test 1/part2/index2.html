@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+<h1 id="dName"></h1><br>
+<h2>Transfer funds</h2>
+
+<label>From:</label><br>
+saving: <input type="checkbox" id="savingF"  onclick="savingF()">
+checking: <input type="checkbox" id="checkingF"  onclick="checkingF()"><br><br>
+
+<label>To:</label><br>
+saving: <input type="checkbox" id="savingT"  onclick="savingT()">
+checking: <input type="checkbox" id="checkingT"  onclick="checkingT()">
+others: <input type="checkbox" id="othersT"  onclick="othersT()"><br>
+<input id="othersU" placeholder="enter user name"><br>
+
+<label>Current Balance:</label>
+<label id=currentB>--</label><br><br>
+
+<label>Credit:</label>
+<label id=credit>--</label><br><br>
+
+
+<label>Amount:</label>
+<input id="amount" placeholder="amount to transfer"><br><br>
+
+<label>Final Balance:</label>
+<label id=finalB>--</label><br><br>
+
+<button type="button" id="trans" onclick="trans()">TRANSFER</button></br>
+
+
+<script  type="text/javascript" src="script2.js" charset="utf-8"></script>
+
+</body>
+
+
+
+</html>

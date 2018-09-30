@@ -43,6 +43,10 @@ main {
   font-weight: lighter;
 }
 
+#H {
+  font-weight: lighter;
+}
+
 #services {
  position:absolute;
  top: 200px;
